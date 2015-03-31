@@ -1,0 +1,3 @@
+---
+- name: Install
+  apt: package=tmux state=present
