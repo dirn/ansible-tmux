@@ -1,0 +1,8 @@
+---
+tmux_install_tmuxinator: false
+tmux_tmuxinator_executable: ~
+
+tmux_install_tmuxp: false
+tmux_tmuxp_executable: ~
+tmux_tmuxp_virtualenv: ~
+tmux_tmuxp_virtualenv_command: ~

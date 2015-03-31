@@ -1,0 +1,6 @@
+---
+- include: debian/tmux.yml
+  when: ansible_os_family == 'Debian'
+
+- include: osx/tmux.yml
+  when: ansible_os_family == 'Darwin'

@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - role: ansible-tmux
+      tmux_install_tmuxinator: true
+      tmux_install_tmuxp: true

@@ -1,0 +1,8 @@
+---
+- include: tmux.yml
+
+- include: tmuxinator.yml
+  when: tmux_install_tmuxinator
+
+- include: tmuxp.yml
+  when: tmux_install_tmuxp

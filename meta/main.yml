@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  author: Andy Dirnberger
+  description: Installs Docker and related utilities.
+  company:
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+    - name: GenericUNIX
+      versions:
+        - all
+        - any
+    - name: Ubuntu
+      versions:
+        - all
+        - lucid
+        - maverick
+        - natty
+        - oneiric
+        - precise
+        - quantal
+        - raring
+        - saucy
+        - trusty
+  categories:
+    - development
+    - system
+dependencies: []

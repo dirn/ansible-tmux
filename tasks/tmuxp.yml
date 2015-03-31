@@ -1,0 +1,6 @@
+---
+- pip:
+    name: tmuxp
+    executable: "{{ tmux_tmuxp_executable }}"
+    virtualenv: "{{ tmux_tmuxp_virtualenv }}"
+    virtualenv_command: "{{ tmux_tmuxp_virtualenv_command }}"

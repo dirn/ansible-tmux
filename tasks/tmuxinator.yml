@@ -1,0 +1,2 @@
+---
+- gem: name=tmuxinator executable={{ tmux_tmuxinator_executable }}state=present
