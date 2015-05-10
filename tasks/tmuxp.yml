@@ -15,16 +15,14 @@
 - name: Install tmuxp into a virtual environment
   pip:
     name: tmuxp
-    executable: "{{ tmux_tmuxp_executable }}"
     virtualenv: "{{ tmux_tmuxp_virtualenv }}"
     state: present
-  when: tmux_tmuxp_executable and tmux_tmuxp_virtualenv and not tmux_tmuxp_virtualenv_command
+  when: tmux_tmuxp_virtualenv and not tmux_tmuxp_virtualenv_command
 
 - name: Install tmuxp into a virtual environment with specified venv command
   pip:
     name: tmuxp
-    executable: "{{ tmux_tmuxp_executable }}"
     virtualenv: "{{ tmux_tmuxp_virtualenv }}"
     virtualenv_command: "{{ tmux_tmuxp_virtualenv_command }}"
     state: present
-  when: tmux_tmuxp_executable and tmux_tmuxp_virtualenv and tmux_tmuxp_virtualenv_command
+  when: tmux_tmuxp_virtualenv and tmux_tmuxp_virtualenv_command
