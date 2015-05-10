@@ -10,4 +10,4 @@
     name: tmuxinator
     executable: "{{ tmux_tmuxinator_executable }}"
     state: present
-  when: tmux_tmuxinator_executable
+  when: tmux_tmuxinator_executable|default('') != ''
