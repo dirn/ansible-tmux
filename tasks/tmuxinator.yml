@@ -1,8 +1,13 @@
 ---
 - name: Install tmuxinator
-  gem: name=tmuxinator state=present
+  gem:
+    name: tmuxinator
+    state: present
   when: not tmux_tmuxinator_executable
 
 - name: Install tmuxinator with specified Ruby version
-  gem: name=tmuxinator executable={{ tmux_tmuxinator_executable }} state=present
+  gem:
+    name: tmuxinator
+    executable: "{{ tmux_tmuxinator_executable }}"
+    state: present
   when: tmux_tmuxinator_executable
